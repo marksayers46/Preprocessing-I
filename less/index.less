@@ -54,7 +54,7 @@ table {
 }
 
 
-
+//My Attempt at preprocessing
 
 html, body {
     height: 100%;
@@ -71,12 +71,12 @@ html, body {
 @font-color: blue;
 @font-stack: Arial, "sans-serif";
 
-.center() {
+.center {
 	display: flex;
 	justify-content: space-between;
 }
 
-.column() {
+.column {
 	flex-direction: column;
 }
 
@@ -92,11 +92,11 @@ header {
 	border-bottom: 1px solid black;
 	margin: 20px 0;
 	padding: 20px 0;
-	.center;
+	.center();
 
 	@media (max-width: 500px) {
 		width: 45%;
-		.column;
+		.column();
 		align-items: center;
 	}
 
@@ -113,7 +113,7 @@ header {
 
 	nav {
 		width: 500px;
-		.center;
+		.center();
 	}
 
 	a {
@@ -124,7 +124,7 @@ header {
 		cursor: pointer;
 
 		@media (max-width: 500px) {
-			.column;
+			.column();
 		}
 	} //a closes
 } //header closes
@@ -135,8 +135,8 @@ header {
 	margin: 20px;
 	
 	@media (max-width: 500px) {
-		.center;
-		.column;
+		.center();
+		.column();
 	}
 
 	h2 {
